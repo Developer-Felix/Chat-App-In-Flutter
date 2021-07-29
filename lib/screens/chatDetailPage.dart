@@ -78,7 +78,7 @@ class _ChatDetailState extends State<ChatDetail> {
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
-            color: (messages[index].messageType  == "receiver"?Colors.grey.shade200:Colors.blue[200]),
+            color: (messages[index].messageType  == "receiver"?Colors.green.shade200:Colors.green[200]),
           ),
           padding: EdgeInsets.all(16),
           child: Text(messages[index].messageContent, style: TextStyle(fontSize: 15),),
@@ -105,7 +105,7 @@ class _ChatDetailState extends State<ChatDetail> {
                       height: 30,
                       width: 30,
                       decoration: BoxDecoration(
-                        color: Colors.lightBlue,
+                        color: Colors.lightGreen,
                         borderRadius: BorderRadius.circular(30),
                       ),
                       child: Icon(Icons.add, color: Colors.white, size: 20, ),
